@@ -26,7 +26,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem;
+  padding: 3rem 5rem;
 }
 
 header nav .left-navbar {
@@ -38,7 +38,7 @@ header nav .left-navbar {
 header nav .left-navbar .navbar {
   display: flex;
   gap: 10px;
-  margin: 0 5rem;
+  margin: 0 2.5rem;
 }
 
 header nav .left-navbar .navbar li {
@@ -70,23 +70,29 @@ header .right-nav .search {
   align-items: center;
   gap: 5px;
   width: 400px;
-  height: 3rem;
-  background: #fff;
+  height: 2.5rem;
   padding: 0 10px;
-  border-radius: 10px;
+  color: #fff;
+  border-bottom: 2px solid #fff;
 }
 
 header .right-nav .search .fa-magnifying-glass {
-  color: #000;
+  color: #fff;
 }
 
 header .right-nav .search input {
   width: 100%;
   border: none;
+  background: transparent;
+  color: #fff;
 }
 
 header .right-nav .search input:focus {
   outline: none;
+}
+
+header .right-nav .search input::placeholder {
+  color: #cecaca;
 }
 
 header .right-nav {
@@ -173,32 +179,32 @@ header .info-wrap {
 main {
   width: 100%;
   padding: 5rem;
-  background: #071628;
+  background: #01011b;
 }
 
-#recent-movie {
-  height: 50vh;
+.container-movie {
+  height: auto;
   overflow: hidden;
   position: relative;
 }
 
-#recent-movie h2 {
+.container-movie h2 {
   color: #fff;
   font-size: 1.5rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
-#recent-movie .card-wrapper {
+.container-movie .card-wrapper {
   width: 306px;
   height: 244px;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
   display: inline-block;
   margin: 15px 10px;
   position: relative;
 }
 
-#recent-movie .card-wrapper::after {
+.container-movie .card-wrapper::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -211,12 +217,12 @@ main {
   transform: translateY(15rem);
 }
 
-#recent-movie .card-wrapper:hover::after {
+.container-movie .card-wrapper:hover::after {
   opacity: 0.7;
   transform: translateY(0);
 }
 
-#recent-movie .card-wrapper progress {
+.container-movie .card-wrapper progress {
   position: absolute;
   bottom: -3px;
   left: 0;
@@ -225,22 +231,22 @@ main {
   padding: 5px;
 }
 
-#recent-movie .card-wrapper progress::-webkit-progress-bar {
+.container-movie .card-wrapper progress::-webkit-progress-bar {
   background-color: #fff;
   border-radius: 10px;
 }
 
-#recent-movie .card-wrapper progress::-webkit-progress-value {
+.container-movie .card-wrapper progress::-webkit-progress-value {
   background-color: #0400df;
   border-radius: 10px;
 }
 
-#recent-movie .card-wrapper img {
+.container-movie .card-wrapper img {
   width: 100%;
   height: 100%;
 }
 
-#recent-movie .textbox {
+.container-movie .textbox {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -250,11 +256,11 @@ main {
   transition: 0.5s;
 }
 
-#recent-movie .card-wrapper:hover .textbox {
+.container-movie .card-wrapper:hover .textbox {
   transform: translateY(0);
 }
 
-#recent-movie .textbox h3 {
+.container-movie .textbox h3 {
   color: #fff;
   padding-top: 10px;
   position: absolute;
@@ -262,7 +268,7 @@ main {
   left: 10px;
 }
 
-#recent-movie .textbox i {
+.container-movie .textbox i {
   color: #cecaca;
   position: absolute;
   top: 50%;
@@ -272,27 +278,178 @@ main {
   cursor: pointer;
 }
 
-#recent-movie .textbox i:hover {
+.container-movie .textbox i:hover {
   color: #0400df;
 }
 
-#recent-movie .left-control {
+.container-movie .left-control {
   color: #fff;
   position: absolute;
   top: 50%;
-  left: 25px;
+  left: 0;
   cursor: pointer;
   font-size: 30px;
+  rotate: 180deg;
+  width: 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: #071628;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0.8;
 }
 
-#recent-movie .right-control {
+.container-movie .right-control {
   color: #fff;
   position: absolute;
   top: 50%;
-  right: 25px;
+  right: 35px;
   cursor: pointer;
   font-size: 30px;
-  width: 30px;
-  height: 100%;
+  width: 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #071628;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.container-movie .new-movie-card {
+  height: 400px;
+  z-index: 1;
+  transition: 0.5s;
+  position: relative;
+}
+
+.container-movie .new-movie-card .cover-title {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  padding: 5px;
+  background: #0f1027;
+}
+
+.container-movie .new-movie-card .cover-title p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.container-movie .new-movie-card::after {
+  background: #fff;
+  opacity: 1;
+  transform: translate(0);
   display: none;
+}
+
+.container-movie .new-movie-card:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.container-movie .card-wrapper .textbox2 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 1;
+  display: none;
+}
+
+.container-movie .card-wrapper .textbox2 .card-header {
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+
+.container-movie .card-wrapper .textbox2 .card-header .card-nav {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #fff;
+  z-index: 1;
+  width: 80px;
+  display: flex;
+  gap: 5px;
+}
+.container-movie .card-wrapper .textbox2 .card-header .card-nav .cta-btn {
+  background: #0400df;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.container-movie .card-wrapper .textbox2 .card-header .card-nav .cta-btn:nth-child(2) {
+  background: #fff;
+  color: #3a3636;
+}
+
+.container-movie .card-wrapper .textbox2 .card-header::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: block;
+  position: absolute;
+  top: 0;
+  opacity: 0.3;
+}
+
+.container-movie .card-wrapper .textbox2 .card-main {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+}
+
+.container-movie .card-wrapper .textbox2 .card-main article {
+  margin: 10px 0;
+}
+.container-movie .card-wrapper .textbox2 .card-main a button {
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  background: #0400df;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.new-movie-card:hover {
+  transform: scale(1.1);
+}
+
+.new-movie-card:hover .textbox2 {
+  display: block;
+}
+
+.movie-category {
+  width: 100%;
+  height: auto;
+}
+
+.movie-category button {
+  width: 152px;
+  height: 40px;
+  margin: 10px;
+  display: inline-block;
+  cursor: pointer;
+  background: #0400df;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #fff;
+  transition: .5s;
+}
+
+.movie-category button:hover {
+  background: #fff;
+  color: #000;
 }
