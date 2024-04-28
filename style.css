@@ -39,6 +39,26 @@ header nav .left-navbar .navbar {
   display: flex;
   gap: 10px;
   margin: 0 2.5rem;
+  position: relative;
+}
+
+/* navbar */
+
+header nav .left-navbar .category-dropdown {
+  width: 400px;
+  height: 300px;
+  background: #00071e;
+  position: absolute;
+  top: 2rem;
+}
+
+header nav .left-navbar .category-dropdown ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+header nav .left-navbar .category-dropdown ul li a {
+  font-size: 18px;
 }
 
 header nav .left-navbar .navbar li {
@@ -446,7 +466,7 @@ main {
   border-radius: 5px;
   font-weight: bold;
   color: #fff;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .movie-category button:hover {
