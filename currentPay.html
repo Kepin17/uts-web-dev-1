@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>currentPay</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/currentPay.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>Lil Kumar</h1>
+      <a href="index.html">
+        <button>
+          <i class="fa-solid fa-house"></i>
+          Home
+        </button>
+      </a>
+    </nav>
+
+    <main>
+      <section class="reception">
+        <aside>
+          <img src="img/recipt.png" alt="recipt" />
+        </aside>
+        <aside>
+          <article class="textbox-wrapper">
+            <header class="textbox-header">
+              <h1>Payment Receipt</h1>
+              <h3>Payment Before</h3>
+              <p id="time">00:00:00</p>
+            </header>
+            <main class="textbox-content"></main>
+
+            <footer class="textbox-footer"></footer>
+          </article>
+        </aside>
+      </section>
+    </main>
+
+    <script>
+      const time = document.getElementById("time");
+
+      
+      // Add a zero in front of numbers<10
+      
+      setInterval(() => {
+        const date = new Date();
+        const hh = date.getHours();
+        const mm = date.getMinutes();
+        const ss = date.getSeconds();
+
+        const currentH = 24*3;
+        const currentM = 60;
+        const currentS = 60;
+        
+        time.innerHTML = `${currentH - hh}:${currentM - mm}:${currentS - ss}`;
+      }, 1000);
+    </script>
+  </body>
+</html>

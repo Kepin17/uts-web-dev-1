@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  box-shadow: 10px 10px 10px rgba(100, 100, 100, 0.5);
+}
+
+.navbar a {
+  color: #0400df;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .cta-btn {
+  background: #0400df;
+  color: #fff;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  transition: 0.5s;
+}
+
+.navbar .cta-btn:hover {
+  transform: scale(0.95);
+}
+
+header {
+  display: flex;
+}
+
+header .header-nav {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header .header-nav .circles-wrapper {
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+header .header-nav .circle {
+  width: 45px;
+  height: 45px;
+  background: #949398;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 25px;
+}
+
+header .header-nav hr {
+  width: 20rem;
+  height: 3px;
+  background: #000;
+}
+
+header .header-nav .active {
+  background: #0400df;
+}
+
+aside {
+  width: 40%;
+  height: 90vh;
+  padding: 2rem;
+}
+
+aside form {
+  width: 400px;
+  height: auto;
+  border-radius: 5px;
+  padding-top: 10px;
+  box-shadow: 10px 10px 10px rgba(125, 123, 123, 0.5);
+  border: 2px solid #ddd;
+}
+
+aside form h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+aside form .input-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+aside form .input-form-wrapper label {
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+aside form .input-form-wrapper .input-wrapper {
+  width: 100%;
+  height: 40px;
+  border: 2px solid #868383;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+aside form .input-form-wrapper .input-wrapper input {
+  width: 100%;
+  padding: 9px;
+  border: none;
+  border: #868383;
+}
+
+aside form .input-form-wrapper .input-wrapper input:focus {
+  outline: none;
+}
+
+aside form .input-form-wrapper .auth-links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+aside form .input-form-wrapper .auth-links a {
+  color: #000;
+}
+
+aside form .input-form-wrapper .auth-links a span {
+  color: #0400df;
+  font-weight: bold;
+}
+
+aside form .input-form-wrapper .btn-wrap {
+  text-align: center;
+}
+
+aside form .input-form-wrapper button {
+  width: 200px;
+  height: 40px;
+  margin: 20px auto;
+  background: #0400df;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.package-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.package-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.package-wrapper:hover .package {
+  color: #fff;
+  background: #0231a9;
+}
+
+.package-wrapper:hover .package hr {
+  background: #fff;
+}
+
+.package-wrapper .package {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #868383;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.package-wrapper .package article , p , hr {
+  margin-top: 5px;
+}
+
+.package-wrapper .package hr {
+  width: 100%;
+  height: 3px;
+  background: #000;
+}
+
+.package-wrapper .package .footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.cta-btn {
+  background: #0400df;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.payment {
+  border: none;
+  box-shadow: none;
+}
+
+.payment h1{
+  text-align: left;
+  
+}
+
+.payment article img {
+  margin-top: 10px;
+
+}

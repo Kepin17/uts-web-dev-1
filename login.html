@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/auth.css" />
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html">Lil Kumar</a>
+      <a href="index.html">
+        <button class="cta-btn">
+          <i class="fa-solid fa-house"></i>
+          Home
+        </button>
+      </a>
+    </nav>
+    <header>
+      <nav class="header-nav">
+        <div class="circles-wrapper">
+          <div class="circle active">1</div>
+          <hr />
+
+          <div class="circle">2</div>
+          <hr />
+
+          <div class="circle">3</div>
+        </div>
+        <img src="img/login.png" alt="auth-img" width="400" />
+      </nav>
+      <aside>
+        <form>
+          <h1>Login Page</h1>
+          <div class="input-form-wrapper">
+            <label for="name">Username</label>
+            <div class="input-wrapper">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" placeholder="Name" id="name" required />
+            </div>
+
+            <label for="password">Password</label>
+            <div class="input-wrapper">
+              <i class="fa-solid fa-key"></i>
+              <input type="password" placeholder="Password" id="password" required />
+              <i class="fa-solid fa-eye pointer"></i>
+            </div>
+            <nav class="auth-links">
+              <a href="register.html">Don't have an account ? <span>Sign Up</span></a>
+              <a href="">Forgot your account password ? <span>Reset Password</span></a>
+            </nav>
+            <a href="package.html" class="btn-wrap">
+              <button type="button">Sign In</button>
+            </a>
+          </div>
+        </form>
+      </aside>
+    </header>
+  </body>
+</html>
