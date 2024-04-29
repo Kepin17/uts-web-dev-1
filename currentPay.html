@@ -28,41 +28,55 @@
     <main>
       <section class="reception">
         <aside>
-          <img src="img/recipt.png" alt="recipt" />
+          <img src="img/recipt.png" alt="recipt" class="recipt-img" />
         </aside>
         <aside>
           <article class="textbox-wrapper">
             <header class="textbox-header">
               <h1>Payment Receipt</h1>
-              <h3>Payment Before</h3>
-              <p id="time">00:00:00</p>
             </header>
-            <main class="textbox-content"></main>
+            <main class="textbox-content">
+              <div class="status-wrapper">
+                <p class="status">Autometic cancel after <span id="time">2 D 24 H 60 M</span></p>
+              </div>
+              <section class="textbox">
+                <ul>
+                  <li>Package Name</li>
+                  <li>Virtual Account</li>
+                  <li>Date & Time</li>
+                  <li>Payement Status</li>
+                  <li>Price</li>
+                  <li>Tax (10%)</li>
+                  <hr />
+                  <li>Total Payment</li>
+                </ul>
+                <ul>
+                  <li>Premium Package</li>
+                  <li>
+                    <i class="fa-solid fa-copy" style="cursor: pointer"></i>
+                    123456789
+                  </li>
+                  <li>Saturday, 12 June 2024</li>
+                  <li class="paid-status">not paid</li>
+                  <li>Rp.215,000</li>
+                  <li>Rp.21,500,00</li>
+                  <hr />
+                  <li>Rp.236,500,00</li>
+                </ul>
+              </section>
+            </main>
 
-            <footer class="textbox-footer"></footer>
+            <div class="textbox-footer">
+              <div class="textbox">
+                <h3>Lil Kumar</h3>
+                <p>Jl. Jend. Sudirman, Kota Jakarta Selatan</p>
+                <p>PT. Lintas Media</p>
+              </div>
+              <img src="img/barcode.jpeg" alt="" width="200" />
+            </div>
           </article>
         </aside>
       </section>
     </main>
-
-    <script>
-      const time = document.getElementById("time");
-
-      
-      // Add a zero in front of numbers<10
-      
-      setInterval(() => {
-        const date = new Date();
-        const hh = date.getHours();
-        const mm = date.getMinutes();
-        const ss = date.getSeconds();
-
-        const currentH = 24*3;
-        const currentM = 60;
-        const currentS = 60;
-        
-        time.innerHTML = `${currentH - hh}:${currentM - mm}:${currentS - ss}`;
-      }, 1000);
-    </script>
   </body>
 </html>

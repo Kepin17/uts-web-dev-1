@@ -1,0 +1,101 @@
+footer {
+  width: 100%;
+  height: 469px;
+  background: #020123;
+  padding: 0 10rem;
+}
+
+footer .footer-nav {
+  text-align: center;
+  padding: 2rem;
+}
+
+footer .footer-nav h1 {
+  color: #fff;
+}
+
+footer .footer-nav img {
+  width: 200px;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.footer-hr {
+  width: 100%;
+  height: 3px;
+  background: #fff;
+}
+
+.footer-nav-2 {
+  width: 100%;
+  height: 130px;
+  display: flex;
+}
+
+.footer-nav-2 .footer-section {
+  width: 50%;
+  height: 100%;
+  padding: 1.4rem;
+  color: #fff;
+}
+
+.footer-nav-2 .footer-section ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.footer-nav-2 .footer-section ul li a {
+  color: #fff;
+}
+
+.footer-nav-2 .footer-section ul li a:hover {
+  color: #0602ff;
+}
+
+.footer-nav-2 .footer-section button {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  background: #000000;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.footer-section .footer-textbox {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.footer-section .footer-textbox a {
+  color: #0602ff;
+}
+
+.footer-section .sosmed-nav {
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+
+.footer-section .sosmed-nav a {
+  color: #fff;
+}
+
+.footer-section .sosmed-nav a:hover {
+  color: #0602ff;
+}
+
+.flex {
+  display: flex;
+}

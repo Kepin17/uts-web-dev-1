@@ -8,6 +8,8 @@
     <!-- css -->
     <link rel="stylesheet" href="css/auth.css" />
 
+    <link rel="stylesheet" href="css/footer.css" />
+
     <!-- icon -->
     <link
       rel="stylesheet"
@@ -44,13 +46,13 @@
         <form>
           <h1>Login Page</h1>
           <div class="input-form-wrapper">
-            <label for="name">Username</label>
+            <label for="name">Username <span class="required" id="required_name">Username required</span></label>
             <div class="input-wrapper">
               <i class="fa-solid fa-user"></i>
               <input type="text" placeholder="Name" id="name" required />
             </div>
 
-            <label for="password">Password</label>
+            <label for="password">Password <span class="required" id="required_password">Password required</span></label>
             <div class="input-wrapper">
               <i class="fa-solid fa-key"></i>
               <input type="password" placeholder="Password" id="password" required />
@@ -60,12 +62,119 @@
               <a href="register.html">Don't have an account ? <span>Sign Up</span></a>
               <a href="">Forgot your account password ? <span>Reset Password</span></a>
             </nav>
-            <a href="package.html" class="btn-wrap">
-              <button type="button">Sign In</button>
-            </a>
+            <button type="button" onclick="saveData()">Sign In</button>
           </div>
         </form>
       </aside>
     </header>
+
+    <footer class="footer">
+      <nav class="footer-nav">
+        <h1>Get the Best Experience on the APP</h1>
+        <img src="img/footer-img.png" alt="footer-img-1" />
+        <img src="img/footer-img-2.png" alt="footer-img-2" />
+      </nav>
+      <hr class="footer-hr" />
+
+      <nav class="footer-nav-2">
+        <section class="footer-section">
+          <h2>About Us</h2>
+          <ul>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Product & Service</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="footer-section">
+          <h2>Help & Support</h2>
+          <ul>
+            <li>
+              <a href="#">Feedback</a>
+            </li>
+            <li>
+              <a href="#">FAQ</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-section">
+          <h2>Terms of Service</h2>
+          <ul>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Terms of Service</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-section">
+          <button>
+            <i class="fa-solid fa-globe"></i>
+            English
+            <i class="fa-solid fa-caret-up"></i>
+          </button>
+        </section>
+      </nav>
+
+      <section class="footer-section flex">
+        <article class="footer-textbox">
+          <h3>Copyright © 2024 Lil Kumar All Rights Reserved</h3>
+          <p>
+            We use cookies to improve your experience on this site. By continuing to use our website, you agree to our use of cookies. Learn more
+            <a href="#"> Flimex Privacy Policy </a>
+          </p>
+        </article>
+        <nav class="sosmed-nav">
+          <a href="#">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </nav>
+      </section>
+    </footer>
+
+    <script>
+      const saveData = () => {
+        const required_name = document.getElementById("required_name");
+        const required_pass = document.getElementById("required_password");
+        const name = document.getElementById("name").value;
+        const password = document.getElementById("password").value;
+
+        if (name !== "" && password !== "") {
+          localStorage.setItem("name", name);
+          localStorage.setItem("password", password);
+          localStorage.setItem("isLogin", true);
+          localStorage.setItem("lang", "en");
+          window.location.href = "package.html";
+          console.log("pindah")
+        } else {
+          if (password === "") {
+            required_name.style.display = "block";
+          }
+
+          if (password === "") {
+            required_pass.style.display = "block";
+          } else {
+            required_name.style.display = "none";
+            required_pass.style.display = "none";
+          }
+        }
+      };
+    </script>
   </body>
 </html>

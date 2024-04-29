@@ -184,7 +184,7 @@ aside form .input-form-wrapper button {
   height: 100%;
   padding: 10px;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .package-wrapper:hover {
@@ -208,7 +208,9 @@ aside form .input-form-wrapper button {
   border-radius: 5px;
 }
 
-.package-wrapper .package article , p , hr {
+.package-wrapper .package article,
+p,
+hr {
   margin-top: 5px;
 }
 
@@ -234,18 +236,25 @@ aside form .input-form-wrapper button {
   border-radius: 5px;
 }
 
-
 .payment {
   border: none;
   box-shadow: none;
 }
 
-.payment h1{
+.payment h1 {
   text-align: left;
-  
 }
 
 .payment article img {
   margin-top: 10px;
+}
 
+.required {
+  color: red;
+  font-size: 15px;
+}
+
+#required_password,
+#required_name {
+  display: none;
 }

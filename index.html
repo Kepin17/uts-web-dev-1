@@ -8,6 +8,8 @@
     <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
 
+    <link rel="stylesheet" href="css/footer.css" />
+
     <!-- icon -->
     <link
       rel="stylesheet"
@@ -47,12 +49,21 @@
             <i class="fa-solid fa-magnifying-glass"></i>
             <input type="text" placeholder="Search something" />
           </form>
-          <a href="login.html">
+          <a href="login.html" id="login-btn">
             <button class="cta-btn">
               <i class="fa-solid fa-right-to-bracket"></i>
               Sign In
             </button>
           </a>
+          <figure id="user-img">
+            <img src="img/user-profile.jpg" alt="user-profile" width="50" height="50" />
+            <div class="profile-dropdown">
+              <!-- <img src="" alt=""> -->
+              <img src="img/english.png" alt="lang" id="langImg" />
+              <button><i class="fa-solid fa-money-check"></i> Account & Subcription</button>
+              <button><i class="fa-solid fa-gear"></i> Settings</button>
+            </div>
+          </figure>
         </div>
       </nav>
 
@@ -90,41 +101,41 @@
         </h2>
 
         <!-- card-wrapper -->
-          <article class="card-wrapper">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-            <article class="textbox">
-              <i class="fa-solid fa-circle-play"></i>
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-            </article>
-            <progress id="progress" value="32" max="100">32%</progress>
+        <article class="card-wrapper">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+          <article class="textbox">
+            <i class="fa-solid fa-circle-play"></i>
+            <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
           </article>
+          <progress id="progress" value="32" max="100">32%</progress>
+        </article>
 
-          <article class="card-wrapper">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-            <article class="textbox">
-              <i class="fa-solid fa-circle-play"></i>
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-            </article>
-            <progress id="progress" value="32" max="100">32%</progress>
+        <article class="card-wrapper">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+          <article class="textbox">
+            <i class="fa-solid fa-circle-play"></i>
+            <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
           </article>
+          <progress id="progress" value="32" max="100">32%</progress>
+        </article>
 
-          <article class="card-wrapper">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-            <article class="textbox">
-              <i class="fa-solid fa-circle-play"></i>
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-            </article>
-            <progress id="progress" value="32" max="100">32%</progress>
+        <article class="card-wrapper">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+          <article class="textbox">
+            <i class="fa-solid fa-circle-play"></i>
+            <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
           </article>
+          <progress id="progress" value="32" max="100">32%</progress>
+        </article>
 
-          <article class="card-wrapper">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-            <article class="textbox">
-              <i class="fa-solid fa-circle-play"></i>
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-            </article>
-            <progress id="progress" value="32" max="100">32%</progress>
+        <article class="card-wrapper">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+          <article class="textbox">
+            <i class="fa-solid fa-circle-play"></i>
+            <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
           </article>
+          <progress id="progress" value="32" max="100">32%</progress>
+        </article>
 
         <div class="left-control">
           <i class="fa-solid fa-chevron-right"></i>
@@ -144,163 +155,157 @@
         </h2>
 
         <!-- card-wrapper -->
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
-
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
             </div>
-          </article>
-        </div>
-    
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
-
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
             </div>
-          </article>
-        </div>
-    
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+          </div>
+        </article>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
 
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
             </div>
-          </article>
-        </div>
-    
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
-
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
             </div>
-          </article>
-        </div>
-    
-     
+          </div>
+        </article>
+
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
+            </div>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
+
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
+            </div>
+          </div>
+        </article>
+
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
+            </div>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
+
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
+            </div>
+          </div>
+        </article>
 
         <div class="left-control">
           <i class="fa-solid fa-chevron-right"></i>
@@ -315,255 +320,220 @@
 
       <nav class="movie-category">
         <a href="#">
-          <button>
-            View All
-          </button>
+          <button>View All</button>
         </a>
-     
+
         <a href="#">
-          <button>
-            K-drama
-          </button>
+          <button>K-drama</button>
         </a>
-     
+
         <a href="#">
-          <button>
-            TV-show
-          </button>
+          <button>TV-show</button>
         </a>
-     
+
         <a href="#">
-          <button>
-            Anime
-          </button>
+          <button>Anime</button>
         </a>
-     
+
         <a href="#">
-          <button>
-            Action
-          </button>
+          <button>Action</button>
         </a>
-     
+
         <a href="#">
-          <button>
-            Mystery
-          </button>
+          <button>Mystery</button>
         </a>
-     
+
         <a href="#">
-          <button>
-            Thailand
-          </button>
+          <button>Thailand</button>
         </a>
-      
+
         <a href="#">
-          <button>
-            Indonesian
-          </button>
+          <button>Indonesian</button>
         </a>
-     
+
         <a href="#">
-          <button>
-            Western
-          </button>
+          <button>Western</button>
         </a>
-     
+
         <a href="#">
-          <button>
-            Chinese
-          </button>
+          <button>Chinese</button>
         </a>
-     
+
         <a href="#">
-          <button>
-            Cartoon
-          </button>
+          <button>Cartoon</button>
         </a>
-     
+
         <a href="#">
-          <button>
-            Family
-          </button>
+          <button>Family</button>
         </a>
-     
+
         <a href="#">
-          <button>
-            Romance
-          </button>
+          <button>Romance</button>
         </a>
-     
+
         <a href="#">
-          <button>
-            Fantasy
-          </button>
+          <button>Fantasy</button>
         </a>
       </nav>
 
-      
-      <section id="Indonesian-movie" class="container-movie" style="margin-top: 5rem;">
+      <section id="Indonesian-movie" class="container-movie" style="margin-top: 5rem">
         <h2>
           <i class="fa-solid fa-champagne-glasses"></i>
           Indonesian
         </h2>
 
         <!-- card-wrapper -->
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
-
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
             </div>
-          </article>
-        </div>
-    
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
-
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
             </div>
-          </article>
-        </div>
-    
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+          </div>
+        </article>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
 
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
             </div>
-          </article>
-        </div>
-    
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
-
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
             </div>
-          </article>
-        </div>
-    
-     
+          </div>
+        </article>
+
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
+            </div>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
+
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
+            </div>
+          </div>
+        </article>
+
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
+            </div>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
+
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
+            </div>
+          </div>
+        </article>
 
         <div class="left-control">
           <i class="fa-solid fa-chevron-right"></i>
@@ -573,171 +543,165 @@
           <i class="fa-solid fa-chevron-right"></i>
         </div>
       </section>
-      
-      <section id="anime-movie" class="container-movie" style="margin-top: 5rem;">
+
+      <section id="anime-movie" class="container-movie" style="margin-top: 5rem">
         <h2>
           <i class="fa-solid fa-champagne-glasses"></i>
           Anime
         </h2>
 
         <!-- card-wrapper -->
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
-
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
             </div>
-          </article>
-        </div>
-    
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
-
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
             </div>
-          </article>
-        </div>
-    
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+          </div>
+        </article>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
 
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
             </div>
-          </article>
-        </div>
-    
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
-
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
             </div>
-          </article>
-        </div>
-    
-     
+          </div>
+        </article>
+
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
+            </div>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
+
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
+            </div>
+          </div>
+        </article>
+
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
+            </div>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
+
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
+            </div>
+          </div>
+        </article>
 
         <div class="left-control">
           <i class="fa-solid fa-chevron-right"></i>
@@ -747,171 +711,165 @@
           <i class="fa-solid fa-chevron-right"></i>
         </div>
       </section>
-      
-      <section id="kdrama-movie" class="container-movie" style="margin-top: 5rem;">
+
+      <section id="kdrama-movie" class="container-movie" style="margin-top: 5rem">
         <h2>
           <i class="fa-solid fa-champagne-glasses"></i>
           K-Drama
         </h2>
 
         <!-- card-wrapper -->
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
-
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
             </div>
-          </article>
-        </div>
-    
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
-
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
             </div>
-          </article>
-        </div>
-    
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+          </div>
+        </article>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
 
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
             </div>
-          </article>
-        </div>
-    
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
-
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
             </div>
-          </article>
-        </div>
-    
-     
+          </div>
+        </article>
+
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
+            </div>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
+
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
+            </div>
+          </div>
+        </article>
+
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
+            </div>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
+
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
+            </div>
+          </div>
+        </article>
 
         <div class="left-control">
           <i class="fa-solid fa-chevron-right"></i>
@@ -921,171 +879,165 @@
           <i class="fa-solid fa-chevron-right"></i>
         </div>
       </section>
-      
-      <section id="western-movie" class="container-movie" style="margin-top: 5rem;">
+
+      <section id="western-movie" class="container-movie" style="margin-top: 5rem">
         <h2>
           <i class="fa-solid fa-champagne-glasses"></i>
           Western
         </h2>
 
         <!-- card-wrapper -->
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
-
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
             </div>
-          </article>
-        </div>
-    
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
-
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
             </div>
-          </article>
-        </div>
-    
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+          </div>
+        </article>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
 
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
             </div>
-          </article>
-        </div>
-    
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
-
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
             </div>
-          </article>
-        </div>
-    
-     
+          </div>
+        </article>
+
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
+            </div>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
+
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
+            </div>
+          </div>
+        </article>
+
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
+            </div>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
+
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
+            </div>
+          </div>
+        </article>
 
         <div class="left-control">
           <i class="fa-solid fa-chevron-right"></i>
@@ -1095,171 +1047,165 @@
           <i class="fa-solid fa-chevron-right"></i>
         </div>
       </section>
-      
-      <section id="romance-movie" class="container-movie" style="margin-top: 5rem;">
+
+      <section id="romance-movie" class="container-movie" style="margin-top: 5rem">
         <h2>
           <i class="fa-solid fa-champagne-glasses"></i>
           Romance
         </h2>
 
         <!-- card-wrapper -->
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
-
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
             </div>
-          </article>
-        </div>
-    
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
-
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
             </div>
-          </article>
-        </div>
-    
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+          </div>
+        </article>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
 
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
             </div>
-          </article>
-        </div>
-    
-          <article class="card-wrapper new-movie-card">
-            <img src="img/movie/mov-1.jfif" alt="card-img" />
-            <div class="cover-title">
-              <p>14 Episodes</p>
-              <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-            </div>
-            <div class="textbox2">
-              <div class="card-header">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-                <nav class="card-nav">
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-play"></i>
-                  </button>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
 
-                  <button class="cta-btn">
-                    <i class="fa-solid fa-bookmark"></i>
-                  </button>
-                </nav>
-              </div>
-              <div class="card-main">
-                <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-                <article>
-                  <h4>
-                    <i class="fa-solid fa-star"></i>
-                    9.5 | 13+ | 2024
-                  </h4>
-                </article>
-
-                <article>
-                  <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                  <a href="#">
-                    <button class="cta-btn" type="button">More info</button>
-                  </a>
-                </article>
-              </div>
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
             </div>
-          </article>
-        </div>
-    
-     
+          </div>
+        </article>
+
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
+            </div>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
+
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
+            </div>
+          </div>
+        </article>
+
+        <article class="card-wrapper new-movie-card">
+          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <div class="cover-title">
+            <p>14 Episodes</p>
+            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+          </div>
+          <div class="textbox2">
+            <div class="card-header">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <nav class="card-nav">
+                <button class="cta-btn">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+
+                <button class="cta-btn">
+                  <i class="fa-solid fa-bookmark"></i>
+                </button>
+              </nav>
+            </div>
+            <div class="card-main">
+              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <article>
+                <h4>
+                  <i class="fa-solid fa-star"></i>
+                  9.5 | 13+ | 2024
+                </h4>
+              </article>
+
+              <article>
+                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
+                <a href="#">
+                  <button class="cta-btn" type="button">More info</button>
+                </a>
+              </article>
+            </div>
+          </div>
+        </article>
 
         <div class="left-control">
           <i class="fa-solid fa-chevron-right"></i>
@@ -1270,6 +1216,86 @@
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <nav class="footer-nav">
+        <h1>Get the Best Experience on the APP</h1>
+        <img src="img/footer-img.png" alt="footer-img-1" />
+        <img src="img/footer-img-2.png" alt="footer-img-2" />
+      </nav>
+      <hr class="footer-hr" />
+
+      <nav class="footer-nav-2">
+        <section class="footer-section">
+          <h2>About Us</h2>
+          <ul>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Product & Service</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="footer-section">
+          <h2>Help & Support</h2>
+          <ul>
+            <li>
+              <a href="#">Feedback</a>
+            </li>
+            <li>
+              <a href="#">FAQ</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-section">
+          <h2>Terms of Service</h2>
+          <ul>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Terms of Service</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-section">
+          <button>
+            <i class="fa-solid fa-globe"></i>
+            English
+            <i class="fa-solid fa-caret-up"></i>
+          </button>
+        </section>
+      </nav>
+
+      <section class="footer-section flex">
+        <article class="footer-textbox">
+          <h3>Copyright © 2024 Lil Kumar All Rights Reserved</h3>
+          <p>
+            We use cookies to improve your experience on this site. By continuing to use our website, you agree to our use of cookies. Learn more
+            <a href="#"> Flimex Privacy Policy </a>
+          </p>
+        </article>
+        <nav class="sosmed-nav">
+          <a href="#">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </nav>
+      </section>
+    </footer>
 
     <!-- script -->
     <script src="main.js"></script>
