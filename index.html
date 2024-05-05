@@ -25,15 +25,32 @@
     <header>
       <!-- navbar -->
 
-      <nav>
+      <!-- mobile view -->
+      <div class="front-nav">
+        <div class="logo">
+          <h1 class="logo-mobile">Lil Kumar</h1>
+          <i class="fa-solid fa-bars" onclick="activeNav()"></i>
+        </div>
+
+        <form class="search-mobile">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search something" />
+        </form>
+      </div>
+
+      <nav id="navbar">
         <div class="left-navbar">
           <h1>Lil Kumar</h1>
           <ul class="navbar">
+            <button onclick="closeNav()">
+              <i class="fa-solid fa-circle-chevron-down"></i>
+              Close
+            </button>
             <li>
-              <a href="#" class="active">Home</a>
+              <a href="index.html" class="active">Home</a>
             </li>
             <li>
-              <a href="movies.html">Movies</a>
+              <a href="#">Movies</a>
             </li>
             <li>
               <a href="#">News & Popular</a>
@@ -62,6 +79,7 @@
               <img src="img/english.png" alt="lang" id="langImg" />
               <button><i class="fa-solid fa-money-check"></i> Account & Subcription</button>
               <button><i class="fa-solid fa-gear"></i> Settings</button>
+              <button onclick="logout()"><i class="fa-solid fa-sign-out"></i> Logout</button>
             </div>
           </figure>
         </div>
@@ -102,37 +120,38 @@
 
         <!-- card-wrapper -->
         <article class="card-wrapper">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+          <img src="img/movie/recent-mov-1.png" alt="card-img" />
           <article class="textbox">
             <i class="fa-solid fa-circle-play"></i>
-            <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+            <h3>Kimi no nawa</h3>
           </article>
           <progress id="progress" value="32" max="100">32%</progress>
         </article>
 
         <article class="card-wrapper">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+          s
+          <img src="img/movie/recent-mov-2.jpg" alt="card-img" />
           <article class="textbox">
             <i class="fa-solid fa-circle-play"></i>
-            <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+            <h3>Re:Zero</h3>
           </article>
           <progress id="progress" value="32" max="100">32%</progress>
         </article>
 
         <article class="card-wrapper">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+          <img src="img/movie/recent-mov-3.webp" alt="card-img" />
           <article class="textbox">
             <i class="fa-solid fa-circle-play"></i>
-            <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+            <h3>Meteor Garden</h3>
           </article>
           <progress id="progress" value="32" max="100">32%</progress>
         </article>
 
         <article class="card-wrapper">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+          <img src="img/movie/recent-mov-4.jpg" alt="card-img" />
           <article class="textbox">
             <i class="fa-solid fa-circle-play"></i>
-            <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+            <h3>5 CM</h3>
           </article>
           <progress id="progress" value="32" max="100">32%</progress>
         </article>
@@ -156,14 +175,14 @@
 
         <!-- card-wrapper -->
         <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <img src="img/movie/new-mov1.webp" alt="card-img" />
           <div class="cover-title">
-            <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+            <p>24 Episodes</p>
+            <h5>Tokyo Ghoul</h5>
           </div>
           <div class="textbox2">
             <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <img src="img/movie/new-mov1.webp" alt="card-img" />
               <nav class="card-nav">
                 <button class="cta-btn">
                   <i class="fa-solid fa-play"></i>
@@ -175,33 +194,33 @@
               </nav>
             </div>
             <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <h3>Tokyo Ghoul</h3>
               <article>
                 <h4>
                   <i class="fa-solid fa-star"></i>
-                  9.5 | 13+ | 2024
+                  9.5 | 13+ | 2014
                 </h4>
               </article>
 
               <article>
-                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                <a href="#">
-                  <button class="cta-btn" type="button">More info</button>
-                </a>
+                <p>Ken Kaneki, yang hampir tidak dapat bertahan hidup setelah pertemuan mematikan dengan Rize Kamishiro, seorang wanita yang diturunkan menjadi ghoul....</p>
               </article>
             </div>
+            <a href="#">
+              <button class="cta-btn" type="button">More info</button>
+            </a>
           </div>
         </article>
 
         <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <img src="img/movie/new-mov2.webp" alt="card-img" />
           <div class="cover-title">
-            <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+            <p>1 Movies</p>
+            <h5>Ip man 4</h5>
           </div>
           <div class="textbox2">
             <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <img src="img/movie/new-mov2.webp" alt="card-img" />
               <nav class="card-nav">
                 <button class="cta-btn">
                   <i class="fa-solid fa-play"></i>
@@ -213,33 +232,33 @@
               </nav>
             </div>
             <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <h3>Ip Man 4</h3>
               <article>
                 <h4>
                   <i class="fa-solid fa-star"></i>
-                  9.5 | 13+ | 2024
+                  9.5 | 13+ | 2019
                 </h4>
               </article>
 
               <article>
-                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                <a href="#">
-                  <button class="cta-btn" type="button">More info</button>
-                </a>
+                <p>Ip Man (Donnie Yen) datang ke Amerika Serikat untuk membantu muridnya, Bruce Lee (Kwok-Kwan Chan) yang mendapat diskriminasi....</p>
               </article>
             </div>
+            <a href="#">
+              <button class="cta-btn" type="button">More info</button>
+            </a>
           </div>
         </article>
 
         <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <img src="img/movie/new-mov3.webp" alt="card-img" />
           <div class="cover-title">
-            <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+            <p>1 Movies</p>
+            <h5>Crows Zero</h5>
           </div>
           <div class="textbox2">
             <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <img src="img/movie/new-mov3.webp" alt="card-img" />
               <nav class="card-nav">
                 <button class="cta-btn">
                   <i class="fa-solid fa-play"></i>
@@ -251,33 +270,33 @@
               </nav>
             </div>
             <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <h3>Crows Zero</h3>
               <article>
                 <h4>
                   <i class="fa-solid fa-star"></i>
-                  9.5 | 13+ | 2024
+                  9.5 | 17+ | 2007
                 </h4>
               </article>
 
               <article>
-                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                <a href="#">
-                  <button class="cta-btn" type="button">More info</button>
-                </a>
+                <p>Takiya Genji (Shun Oguri) adalah siswa kelas tiga yang baru saja pindah ke Sekolah Khusus Pria Suzuran. Saat masuknya bertepatan dengan masa orientasi siswa kelas satu. Selama orientasi siswa baru..</p>
               </article>
             </div>
+            <a href="#">
+              <button class="cta-btn" type="button">More info</button>
+            </a>
           </div>
         </article>
 
         <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <img src="img/movie/new-mov4.webp" alt="card-img" />
           <div class="cover-title">
-            <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+            <p>1 Movies</p>
+            <h5>Laskar Pelangi</h5>
           </div>
           <div class="textbox2">
             <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <img src="img/movie/new-mov4.webp" alt="card-img" />
               <nav class="card-nav">
                 <button class="cta-btn">
                   <i class="fa-solid fa-play"></i>
@@ -289,21 +308,21 @@
               </nav>
             </div>
             <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <h3>Laskar Pelangi</h3>
               <article>
                 <h4>
                   <i class="fa-solid fa-star"></i>
-                  9.5 | 13+ | 2024
+                  9.5 | 13+ | 2005
                 </h4>
               </article>
 
               <article>
-                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                <a href="#">
-                  <button class="cta-btn" type="button">More info</button>
-                </a>
+                <p>Laskar Pelangi adalah novel pertama karya Andrea Hirata yang diterbitkan oleh Bentang Pustaka pada tahun 2005. Novel ini bercerita tentang kehidupan 10 anak dari keluarga miskin.....</p>
               </article>
             </div>
+            <a href="#">
+              <button class="cta-btn" type="button">More info</button>
+            </a>
           </div>
         </article>
 
@@ -384,14 +403,13 @@
 
         <!-- card-wrapper -->
         <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <img src="img/movie/indo-mov-1.webp" alt="card-img" />
           <div class="cover-title">
-            <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+            <h5>Dua Garis Biru</h5>
           </div>
           <div class="textbox2">
             <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <img src="img/movie/indo-mov-1.webp" alt="card-img" />
               <nav class="card-nav">
                 <button class="cta-btn">
                   <i class="fa-solid fa-play"></i>
@@ -403,7 +421,7 @@
               </nav>
             </div>
             <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <h3>Alpine</h3>
               <article>
                 <h4>
                   <i class="fa-solid fa-star"></i>
@@ -412,24 +430,23 @@
               </article>
 
               <article>
-                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                <a href="#">
-                  <button class="cta-btn" type="button">More info</button>
-                </a>
+                <p>Sepasang suami istri muda melanggar batasan tanpa mengetahui konsekuensinya. Mereka berusaha mengambil tanggung jawab atas pilihan mereka dan kepolosan mereka diuji ketika keluarga...</p>
               </article>
             </div>
+            <a href="#">
+              <button class="cta-btn" type="button">More info</button>
+            </a>
           </div>
         </article>
 
         <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <img src="img/movie/indo-mov-2.webp" alt="card-img" />
           <div class="cover-title">
-            <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+            <h5>Dilan 1990</h5>
           </div>
           <div class="textbox2">
             <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <img src="img/movie/indo-mov-2.webp" alt="card-img" />
               <nav class="card-nav">
                 <button class="cta-btn">
                   <i class="fa-solid fa-play"></i>
@@ -441,33 +458,32 @@
               </nav>
             </div>
             <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <h3>Dilan 1990</h3>
               <article>
                 <h4>
                   <i class="fa-solid fa-star"></i>
-                  9.5 | 13+ | 2024
+                  9.5 | 13+ | 2018
                 </h4>
               </article>
 
               <article>
-                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                <a href="#">
-                  <button class="cta-btn" type="button">More info</button>
-                </a>
+                <p>Milea (Vanesha Prescilla) bertemu dengan Dilan (Iqbaal Ramadhan) di sebuah SMA di Bandung. Itu adalah tahun 1990, saat Milea pindah dari Jakarta ke Bandung....</p>
               </article>
             </div>
+            <a href="#">
+              <button class="cta-btn" type="button">More info</button>
+            </a>
           </div>
         </article>
 
         <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <img src="img/movie/Pamali.jpg" alt="card-img" />
           <div class="cover-title">
-            <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+            <h5>Pamali Dusun Pocong</h5>
           </div>
           <div class="textbox2">
             <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <img src="img/movie/Pamali.jpg" alt="card-img" />
               <nav class="card-nav">
                 <button class="cta-btn">
                   <i class="fa-solid fa-play"></i>
@@ -479,7 +495,7 @@
               </nav>
             </div>
             <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <h3>Pamali Dusun Pocong</h3>
               <article>
                 <h4>
                   <i class="fa-solid fa-star"></i>
@@ -488,24 +504,23 @@
               </article>
 
               <article>
-                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                <a href="#">
-                  <button class="cta-btn" type="button">More info</button>
-                </a>
+                <p>Pamali: Dusun Pocong mengusung cerita tentang tiga petugas medis bernama Mila (Yasamin Jasem), Gendis (Dea Panendra), dan Puput (Arla Aliani).....</p>
               </article>
             </div>
+            <a href="#">
+              <button class="cta-btn" type="button">More info</button>
+            </a>
           </div>
         </article>
 
         <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <img src="img/movie/Comic8.jpg" alt="card-img" />
           <div class="cover-title">
-            <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+            <h5>Comic 8</h5>
           </div>
           <div class="textbox2">
             <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <img src="img/movie/Comic8.jpg" alt="card-img" />
               <nav class="card-nav">
                 <button class="cta-btn">
                   <i class="fa-solid fa-play"></i>
@@ -517,7 +532,7 @@
               </nav>
             </div>
             <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <h3>Comic 8</h3>
               <article>
                 <h4>
                   <i class="fa-solid fa-star"></i>
@@ -526,12 +541,12 @@
               </article>
 
               <article>
-                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                <a href="#">
-                  <button class="cta-btn" type="button">More info</button>
-                </a>
+                <p>Delapan anak muda dari berbagai latar secara kebetulan merampok sebuah bank dalam waktu bersamaan. Masing-masing mempunyai alasan dan...</p>
               </article>
             </div>
+            <a href="#">
+              <button class="cta-btn" type="button">More info</button>
+            </a>
           </div>
         </article>
 
@@ -552,14 +567,13 @@
 
         <!-- card-wrapper -->
         <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <img src="img/movie/Miku-win.jpg" alt="card-img" />
           <div class="cover-title">
-            <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+            <h5>5-toubun no Hanayome</h5>
           </div>
           <div class="textbox2">
             <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <img src="img/movie/Miku-win.jpg" alt="card-img" />
               <nav class="card-nav">
                 <button class="cta-btn">
                   <i class="fa-solid fa-play"></i>
@@ -571,7 +585,7 @@
               </nav>
             </div>
             <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <h3>5-toubun no Hanayome</h3>
               <article>
                 <h4>
                   <i class="fa-solid fa-star"></i>
@@ -580,24 +594,23 @@
               </article>
 
               <article>
-                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                <a href="#">
-                  <button class="cta-btn" type="button">More info</button>
-                </a>
+                <p>Fuutarou Uesugi is an ace high school student, but leads an otherwise tough life. His standoffish personality and reclusive nature have left him friendless...</p>
               </article>
             </div>
+            <a href="#">
+              <button class="cta-btn" type="button">More info</button>
+            </a>
           </div>
         </article>
 
         <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <img src="img/movie/Chisato-Waifuku.jpg" alt="card-img" />
           <div class="cover-title">
-            <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+            <h5>lycoris recoil</h5>
           </div>
           <div class="textbox2">
             <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <img src="img/movie/Chisato-Waifuku.jpg" alt="card-img" />
               <nav class="card-nav">
                 <button class="cta-btn">
                   <i class="fa-solid fa-play"></i>
@@ -609,7 +622,7 @@
               </nav>
             </div>
             <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <h3>lycoris recoil</h3>
               <article>
                 <h4>
                   <i class="fa-solid fa-star"></i>
@@ -619,23 +632,22 @@
 
               <article>
                 <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                <a href="#">
-                  <button class="cta-btn" type="button">More info</button>
-                </a>
               </article>
             </div>
+            <a href="#">
+              <button class="cta-btn" type="button">More info</button>
+            </a>
           </div>
         </article>
 
         <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <img src="img/movie/SAO.jpg" alt="card-img" />
           <div class="cover-title">
-            <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+            <h5>Swort Art Online Movie</h5>
           </div>
           <div class="textbox2">
             <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <img src="img/movie/AFK.webp" alt="card-img" />
               <nav class="card-nav">
                 <button class="cta-btn">
                   <i class="fa-solid fa-play"></i>
@@ -647,7 +659,7 @@
               </nav>
             </div>
             <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <h3>Sword Art Online Movie</h3>
               <article>
                 <h4>
                   <i class="fa-solid fa-star"></i>
@@ -656,24 +668,23 @@
               </article>
 
               <article>
-                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                <a href="#">
-                  <button class="cta-btn" type="button">More info</button>
-                </a>
+                <p>Sword Art Online is a Japanese light novel series written by Reki Kawahara and illustrated by abec. The series takes place in the 2020s and focuses on protagonists Kazuto...</p>
               </article>
             </div>
+            <a href="#">
+              <button class="cta-btn" type="button">More info</button>
+            </a>
           </div>
         </article>
 
         <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <img src="img/movie/Tensura.jpg" alt="card-img" />
           <div class="cover-title">
-            <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+            <h5>tensei shitara slime</h5>
           </div>
           <div class="textbox2">
             <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <img src="img/movie/Tensura.jpg" alt="card-img" />
               <nav class="card-nav">
                 <button class="cta-btn">
                   <i class="fa-solid fa-play"></i>
@@ -685,7 +696,7 @@
               </nav>
             </div>
             <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <h3>tensei shitara slime</h3>
               <article>
                 <h4>
                   <i class="fa-solid fa-star"></i>
@@ -694,12 +705,12 @@
               </article>
 
               <article>
-                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                <a href="#">
-                  <button class="cta-btn" type="button">More info</button>
-                </a>
+                <p>EThirty-seven-year-old Satoru Mikami is a typical corporate worker, who is perfectly content with his monotonous lifestyle in Tokyo....</p>
               </article>
             </div>
+            <a href="#">
+              <button class="cta-btn" type="button">More info</button>
+            </a>
           </div>
         </article>
 
@@ -720,14 +731,13 @@
 
         <!-- card-wrapper -->
         <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <img src="img/movie/k-drama-mov-1.jpeg" alt="card-img" />
           <div class="cover-title">
-            <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+            <h5>Flex x Cop</h5>
           </div>
           <div class="textbox2">
             <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <img src="img/movie/k-drama-mov-1.jpeg" alt="card-img" />
               <nav class="card-nav">
                 <button class="cta-btn">
                   <i class="fa-solid fa-play"></i>
@@ -739,7 +749,7 @@
               </nav>
             </div>
             <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <h3>Flex x Cop</h3>
               <article>
                 <h4>
                   <i class="fa-solid fa-star"></i>
@@ -748,24 +758,23 @@
               </article>
 
               <article>
-                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                <a href="#">
-                  <button class="cta-btn" type="button">More info</button>
-                </a>
+                <p>EA fun-loving rich boy gets entangled in an incident and ends up joining a violent crime investigation team.s...</p>
               </article>
             </div>
+            <a href="#">
+              <button class="cta-btn" type="button">More info</button>
+            </a>
           </div>
         </article>
 
         <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <img src="img/movie/k-drama-mov-2.jpg" alt="card-img" />
           <div class="cover-title">
-            <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+            <h5>Dr. Romantic</h5>
           </div>
           <div class="textbox2">
             <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <img src="img/movie/k-drama-mov-2.jpg" alt="card-img" />
               <nav class="card-nav">
                 <button class="cta-btn">
                   <i class="fa-solid fa-play"></i>
@@ -777,7 +786,7 @@
               </nav>
             </div>
             <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <h3>Dr.Romantic</h3>
               <article>
                 <h4>
                   <i class="fa-solid fa-star"></i>
@@ -786,24 +795,24 @@
               </article>
 
               <article>
-                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                <a href="#">
-                  <button class="cta-btn" type="button">More info</button>
-                </a>
+                <p>Kim Sa Bu, a well-respected surgeon, returns after mysteriously disappearing in order to help at a major hospital. There, he meets Seo Woo Jin and Cha Eun Jae,...</p>
               </article>
             </div>
+            <a href="#">
+              <button class="cta-btn" type="button">More info</button>
+            </a>
           </div>
         </article>
 
         <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <img src="img/movie/k-drama-mov-3.jpg" alt="card-img" />
           <div class="cover-title">
-            <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+            <h5>Train to Busan</h5>
           </div>
           <div class="textbox2">
             <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <img src="img/movie/k-drama-mov-3.jpg" alt="card-img" />
+
               <nav class="card-nav">
                 <button class="cta-btn">
                   <i class="fa-solid fa-play"></i>
@@ -815,7 +824,7 @@
               </nav>
             </div>
             <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <h3>Train to Busan</h3>
               <article>
                 <h4>
                   <i class="fa-solid fa-star"></i>
@@ -824,24 +833,23 @@
               </article>
 
               <article>
-                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                <a href="#">
-                  <button class="cta-btn" type="button">More info</button>
-                </a>
+                <p>Seok-woo and his daughter are on a train to Busan on the latter's birthday to see his wife. However, the journey turns ...</p>
               </article>
             </div>
+            <a href="#">
+              <button class="cta-btn" type="button">More info</button>
+            </a>
           </div>
         </article>
 
         <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <img src="img/movie/k-drama-mov-4.png" alt="card-img" />
           <div class="cover-title">
-            <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+            <h5>Mouse</h5>
           </div>
           <div class="textbox2">
             <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <img src="img/movie/k-drama-mov-4.png" alt="card-img" />
               <nav class="card-nav">
                 <button class="cta-btn">
                   <i class="fa-solid fa-play"></i>
@@ -853,7 +861,7 @@
               </nav>
             </div>
             <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <h3>Mouse</h3>
               <article>
                 <h4>
                   <i class="fa-solid fa-star"></i>
@@ -862,180 +870,12 @@
               </article>
 
               <article>
-                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                <a href="#">
-                  <button class="cta-btn" type="button">More info</button>
-                </a>
+                <p>Jeong Ba-reum, a dedicated police officer, faces a life-altering experience when he comes across a psychopath ravaging the town alongside his partner Go Moo-chi...</p>
               </article>
             </div>
-          </div>
-        </article>
-
-        <div class="left-control">
-          <i class="fa-solid fa-chevron-right"></i>
-        </div>
-
-        <div class="right-control">
-          <i class="fa-solid fa-chevron-right"></i>
-        </div>
-      </section>
-
-      <section id="western-movie" class="container-movie" style="margin-top: 5rem">
-        <h2>
-          <i class="fa-solid fa-champagne-glasses"></i>
-          Western
-        </h2>
-
-        <!-- card-wrapper -->
-        <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
-          <div class="cover-title">
-            <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-          </div>
-          <div class="textbox2">
-            <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-              <nav class="card-nav">
-                <button class="cta-btn">
-                  <i class="fa-solid fa-play"></i>
-                </button>
-
-                <button class="cta-btn">
-                  <i class="fa-solid fa-bookmark"></i>
-                </button>
-              </nav>
-            </div>
-            <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-              <article>
-                <h4>
-                  <i class="fa-solid fa-star"></i>
-                  9.5 | 13+ | 2024
-                </h4>
-              </article>
-
-              <article>
-                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                <a href="#">
-                  <button class="cta-btn" type="button">More info</button>
-                </a>
-              </article>
-            </div>
-          </div>
-        </article>
-
-        <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
-          <div class="cover-title">
-            <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-          </div>
-          <div class="textbox2">
-            <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-              <nav class="card-nav">
-                <button class="cta-btn">
-                  <i class="fa-solid fa-play"></i>
-                </button>
-
-                <button class="cta-btn">
-                  <i class="fa-solid fa-bookmark"></i>
-                </button>
-              </nav>
-            </div>
-            <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-              <article>
-                <h4>
-                  <i class="fa-solid fa-star"></i>
-                  9.5 | 13+ | 2024
-                </h4>
-              </article>
-
-              <article>
-                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                <a href="#">
-                  <button class="cta-btn" type="button">More info</button>
-                </a>
-              </article>
-            </div>
-          </div>
-        </article>
-
-        <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
-          <div class="cover-title">
-            <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-          </div>
-          <div class="textbox2">
-            <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-              <nav class="card-nav">
-                <button class="cta-btn">
-                  <i class="fa-solid fa-play"></i>
-                </button>
-
-                <button class="cta-btn">
-                  <i class="fa-solid fa-bookmark"></i>
-                </button>
-              </nav>
-            </div>
-            <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-              <article>
-                <h4>
-                  <i class="fa-solid fa-star"></i>
-                  9.5 | 13+ | 2024
-                </h4>
-              </article>
-
-              <article>
-                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                <a href="#">
-                  <button class="cta-btn" type="button">More info</button>
-                </a>
-              </article>
-            </div>
-          </div>
-        </article>
-
-        <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
-          <div class="cover-title">
-            <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
-          </div>
-          <div class="textbox2">
-            <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
-              <nav class="card-nav">
-                <button class="cta-btn">
-                  <i class="fa-solid fa-play"></i>
-                </button>
-
-                <button class="cta-btn">
-                  <i class="fa-solid fa-bookmark"></i>
-                </button>
-              </nav>
-            </div>
-            <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
-              <article>
-                <h4>
-                  <i class="fa-solid fa-star"></i>
-                  9.5 | 13+ | 2024
-                </h4>
-              </article>
-
-              <article>
-                <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                <a href="#">
-                  <button class="cta-btn" type="button">More info</button>
-                </a>
-              </article>
-            </div>
+            <a href="#">
+              <button class="cta-btn" type="button">More info</button>
+            </a>
           </div>
         </article>
 
@@ -1085,23 +925,23 @@
 
               <article>
                 <p>Embark on a thrilling alpine adventure and explore the majestic peaks, ascend to new heights, and discover the beauty of nature's wonders...</p>
-                <a href="#">
-                  <button class="cta-btn" type="button">More info</button>
-                </a>
               </article>
             </div>
+            <a href="#">
+              <button class="cta-btn" type="button">More info</button>
+            </a>
           </div>
         </article>
 
         <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <img src="img/movie/Pangeran.webp" alt="card-img" />
           <div class="cover-title">
             <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+            <h5>Pangeran</h5>
           </div>
           <div class="textbox2">
             <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <img src="img/movie/Pangeran.webp" alt="card-img" />
               <nav class="card-nav">
                 <button class="cta-btn">
                   <i class="fa-solid fa-play"></i>
@@ -1113,7 +953,7 @@
               </nav>
             </div>
             <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <h3>Pangeran</h3>
               <article>
                 <h4>
                   <i class="fa-solid fa-star"></i>
@@ -1132,14 +972,14 @@
         </article>
 
         <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <img src="img/movie/Dearnathan.jpg" alt="card-img" />
           <div class="cover-title">
             <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+            <h5>Dear Nathan</h5>
           </div>
           <div class="textbox2">
             <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <img src="img/movie/Dearnathan.jpg" alt="card-img" />
               <nav class="card-nav">
                 <button class="cta-btn">
                   <i class="fa-solid fa-play"></i>
@@ -1151,7 +991,7 @@
               </nav>
             </div>
             <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <h3>Dear Nathan</h3>
               <article>
                 <h4>
                   <i class="fa-solid fa-star"></i>
@@ -1170,14 +1010,14 @@
         </article>
 
         <article class="card-wrapper new-movie-card">
-          <img src="img/movie/mov-1.jfif" alt="card-img" />
+          <img src="img/movie/Rompis.jpg" alt="card-img" />
           <div class="cover-title">
             <p>14 Episodes</p>
-            <h5>Alpine Odyssey: Capturing the Snow Mountain Expedition</h5>
+            <h5>Rompis</h5>
           </div>
           <div class="textbox2">
             <div class="card-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1qQcgXOrpC4rI3LzBJOSj7PqWAsuNrogR0mBp3SeYw&s" alt="card-img" />
+              <img src="img/movie/Rompis.jpg" alt="card-img" />
               <nav class="card-nav">
                 <button class="cta-btn">
                   <i class="fa-solid fa-play"></i>
@@ -1189,7 +1029,7 @@
               </nav>
             </div>
             <div class="card-main">
-              <h3>Alpine Odyssey: Capturing the Snow Mountain Expedition</h3>
+              <h3>Rompis</h3>
               <article>
                 <h4>
                   <i class="fa-solid fa-star"></i>
@@ -1269,12 +1109,12 @@
         </section>
       </nav>
 
-      <section class="footer-section flex">
+      <section class="footer-section flex" id="about-footer">
         <article class="footer-textbox">
-          <h3>Copyright © 2024 Lil Kumar All Rights Reserved</h3>
+          <h3>Copyright © 2024 Lil Kumar All Rights Reserved</h3>
           <p>
             We use cookies to improve your experience on this site. By continuing to use our website, you agree to our use of cookies. Learn more
-            <a href="#"> Flimex Privacy Policy </a>
+            <a href="#"> Lil Kumar Privacy Policy </a>
           </p>
         </article>
         <nav class="sosmed-nav">

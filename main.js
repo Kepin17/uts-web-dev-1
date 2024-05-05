@@ -8,6 +8,17 @@ if (isLogin === "true") {
   userImg.style.display = "block";
 }
 
-const langImg = document.getElementById("langImg");
+const activeNav = () => {
+  const navbar = document.getElementById("navbar");
+  navbar.classList.toggle("active");
+};
 
-langImg.addEventListener("click", () => {});
+const closeNav = () => {
+  const navbar = document.getElementById("navbar");
+  navbar.classList.toggle("active");
+};
+
+const logout = () => {
+  localStorage.removeItem("isLogin", false);
+  window.location.reload();
+};

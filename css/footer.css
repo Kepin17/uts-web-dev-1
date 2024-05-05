@@ -1,11 +1,13 @@
 footer {
   width: 100%;
-  height: 469px;
+  height: auto;
   background: #020123;
   padding: 0 10rem;
+  padding-bottom: 10px;
 }
 
 footer .footer-nav {
+  width: 100%;
   text-align: center;
   padding: 2rem;
 }
@@ -33,7 +35,7 @@ footer .footer-nav img {
 }
 
 .footer-nav-2 .footer-section {
-  width: 50%;
+  width: 100%;
   height: 100%;
   padding: 1.4rem;
   color: #fff;
@@ -67,8 +69,6 @@ footer .footer-nav img {
 }
 
 .footer-section .footer-textbox {
-  width: 100%;
-  height: 100%;
   color: #fff;
   margin-top: 2rem;
 }
@@ -98,4 +98,53 @@ footer .footer-nav img {
 
 .flex {
   display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  footer .footer-nav {
+    padding: 0;
+    width: 100%;
+  }
+
+  hr {
+    margin: 10px;
+  }
+
+  footer .footer-section {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer .footer-nav-2 {
+    flex-direction: column;
+  }
+
+  footer .sosmed-nav {
+    align-items: start;
+    justify-content: start;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .footer-nav-2 .footer-section button {
+    margin-top: 2rem;
+  }
+
+  #about-footer {
+    margin-top: 22rem;
+    padding: 10px;
+  }
+
+  .sosmed-nav {
+    width: 200px;
+  }
 }

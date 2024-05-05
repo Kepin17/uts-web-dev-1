@@ -258,3 +258,25 @@ hr {
 #required_name {
   display: none;
 }
+
+@media screen and (max-width: 768px) {
+  aside {
+    width: 100%;
+    height: auto;
+  }
+  aside form {
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  img {
+    display: none;
+  }
+
+  header .header-nav {
+    display: none;
+  }
+}

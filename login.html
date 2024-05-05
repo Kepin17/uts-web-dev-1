@@ -120,12 +120,12 @@
         </section>
       </nav>
 
-      <section class="footer-section flex">
+      <section class="footer-section flex" id="about-footer">
         <article class="footer-textbox">
-          <h3>Copyright © 2024 Lil Kumar All Rights Reserved</h3>
+          <h3>Copyright © 2024 Lil Kumar All Rights Reserved</h3>
           <p>
             We use cookies to improve your experience on this site. By continuing to use our website, you agree to our use of cookies. Learn more
-            <a href="#"> Flimex Privacy Policy </a>
+            <a href="#"> Lil Kumar Privacy Policy </a>
           </p>
         </article>
         <nav class="sosmed-nav">
@@ -161,7 +161,7 @@
           localStorage.setItem("isLogin", true);
           localStorage.setItem("lang", "en");
           window.location.href = "package.html";
-          console.log("pindah")
+          console.log("pindah");
         } else {
           if (password === "") {
             required_name.style.display = "block";

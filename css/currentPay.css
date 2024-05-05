@@ -167,3 +167,22 @@ hr {
 .textbox-footer .textbox h3 {
   margin-bottom: 10px;
 }
+
+@media screen and (max-width: 768px) {
+  .reception aside:nth-child(1) {
+    display: none;
+  }
+  .reception aside:nth-child(2) {
+    width: 100%;
+  }
+
+  .textbox-wrapper {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .textbox-wrapper img {
+    width: 70px;
+    height: 70px;
+  }
+}
