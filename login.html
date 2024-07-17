@@ -20,9 +20,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <style>
-  
-  </style>
+  <style></style>
   <body>
     <nav class="navbar">
       <a href="index.html">Lil Kumar</a>
@@ -34,7 +32,6 @@
       </a>
     </nav>
     <header>
-
       <!-- alert box -->
       <div class="alert-box" id="alert-box">
         <div class="alert-header">
@@ -76,7 +73,7 @@
             <div class="input-wrapper">
               <i class="fa-solid fa-key"></i>
               <input type="password" placeholder="Password" id="password" required />
-              <i id="eye" onclick="showPassword()" class="fa-solid fa-eye" style="cursor: pointer;"></i>
+              <i id="eye" onclick="showPassword()" class="fa-solid fa-eye" style="cursor: pointer"></i>
             </div>
             <nav class="auth-links">
               <a href="register.html">Don't have an account ? <span>Sign Up</span></a>
@@ -169,22 +166,19 @@
     </footer>
 
     <script>
-
       const eye = document.getElementById("eye");
 
       const showPassword = () => {
-        if(eye.classList.contains("fa-eye")) {
-          eye.classList.remove("fa-eye")
-          eye.classList.add("fa-eye-slash")
-          document.getElementById("password").type = "text"
-        }else {
-          eye.classList.remove("fa-eye-slash")
-          eye.classList.add("fa-eye")
-          document.getElementById("password").type = "password"
+        if (eye.classList.contains("fa-eye")) {
+          eye.classList.remove("fa-eye");
+          eye.classList.add("fa-eye-slash");
+          document.getElementById("password").type = "text";
+        } else {
+          eye.classList.remove("fa-eye-slash");
+          eye.classList.add("fa-eye");
+          document.getElementById("password").type = "password";
         }
-      }
-
-      
+      };
 
       const saveData = () => {
         const required_name = document.getElementById("required_name");
@@ -208,15 +202,15 @@
                 return res.json();
               } else {
                 const alertBox = document.getElementById("alert-box");
-                alertBox.style.top = "20%"
-                const loading = document.getElementById("loading")
-                loading.style.animation = "alertLoadingAnimation 2s ease"
-                const alertmsg = document.getElementById("alertmsg")
-                alertmsg.innerHTML = "Invalid Email or Password"
+                alertBox.style.top = "20%";
+                const loading = document.getElementById("loading");
+                loading.style.animation = "alertLoadingAnimation 2s ease";
+                const alertmsg = document.getElementById("alertmsg");
+                alertmsg.innerHTML = "Invalid Email or Password";
                 setTimeout(() => {
-                  alertBox.style.top = "-10%"
-                  loading.style.animation = "none"
-                }, 2000)
+                  alertBox.style.top = "-10%";
+                  loading.style.animation = "none";
+                }, 2000);
               }
             })
             .then((data) => {
@@ -224,8 +218,8 @@
               localStorage.setItem("isLogin", true);
               localStorage.setItem("website_id", data.user.website_id);
               localStorage.setItem("token", data.token);
-              localStorage.setItem("username" , data.user.username)
-              window.location.href = "package.html"
+              localStorage.setItem("username", data.user.username);
+              window.location.href = "package.html";
             });
         } else {
           if (password === "") {

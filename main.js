@@ -4,6 +4,8 @@ const isLogin = localStorage.getItem("isLogin");
 const statusUser = document.getElementById("status-user");
 const reportWrapper = document.getElementById("report-wrapper");
 
+localStorage.setItem("isLogin", "false");
+
 if (isLogin === "true") {
   loginBtn.style.display = "none";
   userImg.style.display = "block";
@@ -95,20 +97,26 @@ const submitComment = (event) => {
     }),
   }).then((res) => {
     if (res.status !== 400) {
-      console.log("berhasil menambahkan komentar");
+      alertBox("Successfully add new comment");
+      setTimeout(() => {
+        window.location.reload();
+      }, 2000);
       return res.json();
     } else {
-      const alertBox = document.getElementById("alert-box");
-      alertBox.style.top = "20%";
-      const loading = document.getElementById("loading");
-      loading.style.animation = "alertLoadingAnimation 2s ease";
-      const alertmsg = document.getElementById("alertmsg");
-      alertmsg.innerHTML = "Please login to comment";
-      setTimeout(() => {
-        alertBox.style.top = "-10%";
-        loading.style.animation = "none";
-      }, 2000);
-      console.log("comment gagal");
+      alertBox("Please login first to comment");
     }
   });
+
+  const alertBox = (msg) => {
+    const alertBox = document.getElementById("alert-box");
+    alertBox.style.top = "20%";
+    const loading = document.getElementById("loading");
+    loading.style.animation = "alertLoadingAnimation 2s ease";
+    const alertmsg = document.getElementById("alertmsg");
+    alertmsg.innerHTML = msg;
+    setTimeout(() => {
+      alertBox.style.top = "-10%";
+      loading.style.animation = "none";
+    }, 2000);
+  };
 };
