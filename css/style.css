@@ -381,7 +381,7 @@ main {
 }
 
 .container-movie .card-wrapper {
-  width: 250px;
+  max-width: 280px;
   height: 170px;
   border-radius: 5px;
   overflow: hidden;
