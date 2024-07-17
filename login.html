@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="css/footer.css" />
 
+    <link rel="stylesheet" href="css/alert.css" />
     <!-- icon -->
     <link
       rel="stylesheet"
@@ -19,6 +20,9 @@
       referrerpolicy="no-referrer"
     />
   </head>
+  <style>
+  
+  </style>
   <body>
     <nav class="navbar">
       <a href="index.html">Lil Kumar</a>
@@ -30,6 +34,22 @@
       </a>
     </nav>
     <header>
+
+      <!-- alert box -->
+      <div class="alert-box" id="alert-box">
+        <div class="alert-header">
+          <h3>
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            Alert Box
+          </h3>
+          <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+        <p class="alert" id="alertmsg">Please login first</p>
+        <div class="loading-line">
+          <div class="loading" id="loading"></div>
+        </div>
+      </div>
+
       <nav class="header-nav">
         <div class="circles-wrapper">
           <div class="circle active">1</div>
@@ -40,16 +60,16 @@
 
           <div class="circle">3</div>
         </div>
-        <img src="img/login.png" alt="auth-img" width="400" />
+        <img src="img/login.png" alt="auth-img" width="300" />
       </nav>
       <aside>
         <form>
           <h1>Login Page</h1>
           <div class="input-form-wrapper">
-            <label for="name">Username <span class="required" id="required_name">Username required</span></label>
+            <label for="email">email <span class="required" id="required_name">email required</span></label>
             <div class="input-wrapper">
               <i class="fa-solid fa-user"></i>
-              <input type="text" placeholder="Name" id="name" required />
+              <input type="email" placeholder="email@example.com" id="email" required />
             </div>
 
             <label for="password">Password <span class="required" id="required_password">Password required</span></label>
@@ -149,19 +169,50 @@
     </footer>
 
     <script>
+
+      
+
       const saveData = () => {
         const required_name = document.getElementById("required_name");
         const required_pass = document.getElementById("required_password");
-        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
 
-        if (name !== "" && password !== "") {
-          localStorage.setItem("name", name);
-          localStorage.setItem("password", password);
-          localStorage.setItem("isLogin", true);
-          localStorage.setItem("lang", "en");
-          window.location.href = "package.html";
-          console.log("pindah");
+        if (email !== "" && password !== "") {
+          fetch("https://api-komentar-pengunjung.desafintech.com/api/users/signin", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              email: email,
+              password: password,
+            }),
+          })
+            .then((res) => {
+              if (res.status !== 401) {
+                return res.json();
+              } else {
+                const alertBox = document.getElementById("alert-box");
+                alertBox.style.top = "20%"
+                const loading = document.getElementById("loading")
+                loading.style.animation = "alertLoadingAnimation 2s ease"
+                const alertmsg = document.getElementById("alertmsg")
+                alertmsg.innerHTML = "Invalid Email or Password"
+                setTimeout(() => {
+                  alertBox.style.top = "-10%"
+                  loading.style.animation = "none"
+                }, 2000)
+              }
+            })
+            .then((data) => {
+              console.log(data);
+              localStorage.setItem("isLogin", true);
+              localStorage.setItem("website_id", data.user.website_id);
+              localStorage.setItem("token", data.token);
+              localStorage.setItem("username" , data.user.username)
+              window.location.href = "package.html"
+            });
         } else {
           if (password === "") {
             required_name.style.display = "block";

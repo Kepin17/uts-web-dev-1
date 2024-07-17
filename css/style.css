@@ -11,14 +11,146 @@ a {
   text-decoration: none;
 }
 
+.chat-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border: 3px solid #fff;
+  cursor: pointer;
+}
+
+.chat-wrapper , .report-wrapper  {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  background: linear-gradient( to right, #ffffff , #ffffff);
+  border-radius: 10px;
+}
+
+.report-wrapper  {
+  width: 300px;
+  height: auto;
+  transform: translate(-50% , -50%);
+  overflow: hidden;
+  display: none;
+}
+
+.report-wrapper .report-header {
+  width: 100%;
+  height: 12vh;
+  background: linear-gradient(120deg, rgb(193, 117, 255) , rgb(0, 60, 255));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.report-wrapper .report-header .user-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #cecaca;
+  border-radius: 100%;
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.report-wrapper .report-header .user-circle .status-user {
+  width: 15px;
+  height: 15px;
+  background: crimson;
+  border: 2px solid #fff;
+  position: absolute;
+  right: 0px;
+  bottom: 3px;
+  border-radius: 100%;
+}
+
+.report-wrapper nav h3 {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+.report-wrapper .report-main {
+  width: 100%;
+  height: 48vh;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.report-wrapper .display-comment-wrapper{
+ width: 250px;
+ height: auto;
+ position: absolute;
+ top: 10px;
+ right: 10px;
+ padding: 10px;
+}
+
+.report-wrapper .display-comment-wrapper .display-comment {
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 1rem;
+
+}
+
+
+
+.report-wrapper .report-footer {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.report-wrapper .report-footer .comment-wrapper {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #000;
+  border-radius: 20px;
+}
+
+.report-wrapper .report-footer .comment-wrapper button {
+  cursor: pointer;
+  border: none;
+}
+
+.report-wrapper .report-footer .comment-wrapper input {
+  width: 90%;
+  border: none;
+}
+
+.report-wrapper .report-footer .comment-wrapper input:focus {
+  outline: none;
+}
+
 header {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url("../img/header.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/header.jpg");
   background-repeat: none;
   background-size: cover;
   position: relative;
 }
+
 
 header nav {
   width: 100%;
@@ -65,7 +197,7 @@ header nav .left-navbar .navbar .active {
 
 header nav h1 {
   color: #0400df;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 header .right-nav .search {
@@ -125,7 +257,7 @@ header .right-nav figure .profile-dropdown {
   flex-direction: column;
   border-radius: 10px;
   display: none;
-  z-index: 1;
+  z-index: 3;
   overflow: hidden;
 }
 
@@ -154,12 +286,12 @@ header .right-nav figure .profile-dropdown button:hover {
 }
 
 header .right-nav .cta-btn {
-  width: 150px;
+  width: 120px;
   height: 40px;
   background: #0400df;
   font-weight: bold;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -176,7 +308,7 @@ header .textbox {
 
 header .textbox h1 {
   color: #fff;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 header .textbox h4 {
@@ -196,7 +328,7 @@ header .textbox .cta-wrapper {
 
 header .textbox .cta-btn {
   width: 150px;
-  height: 3rem;
+  height: 2.7rem;
   background: #0400df;
   font-weight: bold;
   color: #fff;
@@ -249,7 +381,7 @@ main {
 }
 
 .container-movie .card-wrapper {
-  width: 306px;
+  width: 250px;
   height: 170px;
   border-radius: 5px;
   overflow: hidden;
@@ -496,7 +628,7 @@ main {
 }
 
 .movie-category button {
-  width: 152px;
+  width: 130px;
   height: 40px;
   margin: 10px;
   display: inline-block;
@@ -660,4 +792,16 @@ header .front-nav {
   .search-mobile input:focus {
     outline: none;
   }
+
+
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.profile h3 {
+  font-weight: 400;
 }

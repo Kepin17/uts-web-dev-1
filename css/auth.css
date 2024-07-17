@@ -49,6 +49,7 @@ a {
 
 header {
   display: flex;
+  height: 120vh;
 }
 
 header .header-nav {
@@ -80,7 +81,7 @@ header .header-nav .circle {
 }
 
 header .header-nav hr {
-  width: 20rem;
+  width: 15rem;
   height: 3px;
   background: #000;
 }
@@ -117,8 +118,9 @@ aside form .input-form-wrapper {
 
 aside form .input-form-wrapper label {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 15px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 aside form .input-form-wrapper .input-wrapper {
