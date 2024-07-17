@@ -77,14 +77,14 @@
             <div class="input-wrapper">
               <i class="fa-solid fa-key"></i>
               <input type="password" placeholder="Password" id="password" required />
-              <i class="fa-solid fa-eye pointer"></i>
+              <i class="fa-solid fa-eye pointer" id="eye_pass" onclick="showPass()"></i>
             </div>
 
             <label for="checkpassword">Recheck Password</label>
             <div class="input-wrapper">
               <i class="fa-solid fa-key"></i>
               <input type="password" placeholder="Recheck Password" id="checkpassword" required />
-              <i class="fa-solid fa-eye pointer"></i>
+              <i class="fa-solid fa-eye pointer" id="eye_checkpass" onclick="showreCheckPass()"></i>
             </div>
 
             <nav class="auth-links">
@@ -176,6 +176,33 @@
     </footer>
 
     <script>
+      const eye_pass = document.getElementById("eye_pass");
+      const eye_checkpass = document.getElementById("eye_checkpass");
+
+      const showPass = () => {
+        if (eye_pass.classList.contains("fa-eye")) {
+          eye_pass.classList.remove("fa-eye");
+          eye_pass.classList.add("fa-eye-slash");
+          document.getElementById("password").type = "text";
+        } else {
+          eye_pass.classList.remove("fa-eye-slash");
+          eye_pass.classList.add("fa-eye");
+          document.getElementById("password").type = "password";
+        }
+      };
+
+      const showreCheckPass = () => {
+        if (eye_checkpass.classList.contains("fa-eye")) {
+          eye_checkpass.classList.remove("fa-eye");
+          eye_checkpass.classList.add("fa-eye-slash");
+          document.getElementById("checkpassword").type = "text";
+        } else {
+          eye_checkpass.classList.remove("fa-eye-slash");
+          eye_checkpass.classList.add("fa-eye");
+          document.getElementById("checkpassword").type = "password";
+        }
+      };
+
       const register = () => {
         const username = document.getElementById("name").value;
         const email = document.getElementById("email").value;

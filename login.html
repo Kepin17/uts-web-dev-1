@@ -76,7 +76,7 @@
             <div class="input-wrapper">
               <i class="fa-solid fa-key"></i>
               <input type="password" placeholder="Password" id="password" required />
-              <i class="fa-solid fa-eye pointer"></i>
+              <i id="eye" onclick="showPassword()" class="fa-solid fa-eye" style="cursor: pointer;"></i>
             </div>
             <nav class="auth-links">
               <a href="register.html">Don't have an account ? <span>Sign Up</span></a>
@@ -169,6 +169,20 @@
     </footer>
 
     <script>
+
+      const eye = document.getElementById("eye");
+
+      const showPassword = () => {
+        if(eye.classList.contains("fa-eye")) {
+          eye.classList.remove("fa-eye")
+          eye.classList.add("fa-eye-slash")
+          document.getElementById("password").type = "text"
+        }else {
+          eye.classList.remove("fa-eye-slash")
+          eye.classList.add("fa-eye")
+          document.getElementById("password").type = "password"
+        }
+      }
 
       
 
