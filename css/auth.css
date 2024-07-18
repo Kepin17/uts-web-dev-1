@@ -80,7 +80,7 @@ a {
 
 header {
   display: flex;
-  height: 120vh;
+  height: auto;
 }
 
 header .header-nav {
