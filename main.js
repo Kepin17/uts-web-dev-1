@@ -4,8 +4,6 @@ const isLogin = localStorage.getItem("isLogin");
 const statusUser = document.getElementById("status-user");
 const reportWrapper = document.getElementById("report-wrapper");
 
-localStorage.setItem("isLogin", "false");
-
 if (isLogin === "true") {
   loginBtn.style.display = "none";
   userImg.style.display = "block";
